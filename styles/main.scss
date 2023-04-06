@@ -1,0 +1,1042 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/reset';
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nerko+One&family=Roboto:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nerko+One&family=Roboto:wght@300&family=Space+Mono&display=swap');
+
+html,
+body {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  @include box (1440px, 700px);
+  background-image: url(./images/header.png);
+  color: $white-text;
+
+  .header_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header_logo__name {
+      font-size: 20px;
+      margin-left: 248px;
+      margin-top: 48px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+    }
+
+    .header_login {
+      @include box (180px, 50px);
+      display: flex;
+      flex-direction: row;
+      margin-top: 52px;
+      margin-right: 264px;
+      font-family: 'Montserrat';
+      font-weight: 400;
+
+      .header__login-btn {
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .header_login-signup {
+        @include box (86px, 32px);
+        font-size: 14px;
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -11px;
+        margin-left: 21px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header__heading {
+    @include box (470px, 126px);
+    font-size: 52px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 63.39px;
+    margin: 0 auto;
+    margin-top: 121px;
+  }
+
+  .header__subheading {
+    font-size: 24px;
+    text-align: center;
+    color: $white-subText;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-top: 29px;
+  }
+
+  .header__button {
+    @include box (225px, 40px);
+    background-color: #FF4E50;
+    border-radius: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 34px;
+    cursor: pointer;
+  }
+}
+
+
+main {
+  @include box (1440px, 2491px);
+
+  .dreamshare {
+    @include box (1440px, 556px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dreamshare__heading {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 26px;
+      color: $black-text-heading;
+      margin-top: 92px;
+    }
+
+    .dreamshare_container {
+      @include box (940px, 461px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 38px;
+
+      .dreamshare_container__dream1 {
+        @include box (300px, 400px);
+        background-image: url(./images/dream-step-1.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .dreamshare_container__dream2 {
+        @include box (300px, 400px);
+        background-image: url(./images/dream-step-2.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .dreamshare_container__dream3 {
+        @include box (300px, 400px);
+        background-image: url(./images/dream-step-3.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .button_step {
+        @include box (70px, 20px);
+        border-radius: 40px;
+        background-color: $red-button;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 10px;
+        color: $white-text;
+      }
+
+      .dreamshare_container__heading {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        color: $white-text;
+      }
+
+      .dreamshare_container__subHeading {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 14px;
+        color: $grey-subText;
+      }
+
+      .step1,
+      .step3 {
+        margin-bottom: 24px;
+        margin-left: 26px;
+      }
+
+      .step2 {
+        margin-bottom: 24px;
+        margin-left: 26px;
+      }
+
+      .heading2 {
+        margin-bottom: 19px;
+        margin-left: 25px;
+      }
+
+      .subHeading2 {
+        margin-bottom: 21px;
+        margin-left: 25px;
+        width: 240px;
+      }
+
+      .heading1,
+      .heading3 {
+        margin-bottom: 26px;
+        margin-left: 26px;
+      }
+
+      .subHeading {
+        margin-bottom: 21px;
+        margin-left: 25px;
+        width: 242px;
+      }
+    }
+  }
+
+  .partners {
+    @include box (1440px, 478px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .partners__heading {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 26px;
+      color: $black-text-heading;
+      margin-top: 92px;
+    }
+
+    .partners_container {
+      @include box (941px, 370px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -27px;
+
+      .partner1,
+      .partner2,
+      .partner3,
+      .partner4 {
+        @include box (221px, 240px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .partner1_photo {
+          @include box (120px, 120px);
+          background-image: url(images/partner1.png);
+        }
+
+        .partner2_photo {
+          @include box (120px, 120px);
+          background-image: url(images/partner2.png);
+        }
+
+        .partner3_photo {
+          @include box (120px, 120px);
+          background-image: url(images/partner3.png);
+        }
+
+        .partner4_photo {
+          @include box (120px, 120px);
+          background-image: url(images/partner4.png);
+        }
+
+        .partner_name {
+          font-family: 'Montserrat';
+          font-size: 14px;
+          font-weight: 700;
+          color: $black-text-heading;
+          margin-top: 20px;
+        }
+
+        .partner_description {
+          font-family: 'Roboto';
+          font-weight: 300;
+          font-size: 14px;
+          color: $grey-description;
+          margin-top: 23px;
+          width: 221px;
+        }
+      }
+    }
+
+    .partners-btn {
+      @include box (180px, 40px);
+      border: 2px solid $red-button;
+      color: $red-button;
+      border-radius: 40px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: -46px;
+    }
+  }
+
+  .activities {
+    @include box (1440px, 1106px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .activities__heading {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 26px;
+      color: $black-text-heading;
+      margin-top: 70px;
+    }
+
+    .activities_container {
+      @include box (940px, 1010px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      margin-top: 38px;
+
+      .activities__1 {
+        @include box (300px, 310px);
+        background-image: url(images/activity1.png);
+      }
+
+      .activities__2 {
+        @include box (300px, 310px);
+        background-image: url(images/activity2.png);
+      }
+
+      .activities__3 {
+        @include box (300px, 310px);
+        background-image: url(images/activity3.png);
+      }
+
+      .activities__4 {
+        @include box (300px, 310px);
+        background-image: url(images/activity4.png);
+      }
+
+      .activities__5 {
+        @include box (620px, 310px);
+        background-image: url(images/activity5.png);
+      }
+
+      .activities__6 {
+        @include box (620px, 310px);
+        background-image: url(images/activity6.png);
+      }
+
+      .activities__7 {
+        @include box (300px, 310px);
+        background-image: url(images/activity7.png);
+      }
+
+      .activ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .activities_text {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 22px;
+        color: $white-text;
+      }
+
+      .text3 {
+        @include box (187px, 54px);
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .search {
+    @include box (1440px, 353px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .search__heading {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 26px;
+      color: $black-text-heading;
+      margin-top: 90px;
+    }
+
+    .search__subHeading {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 18px;
+      color: $grey-subText;
+      margin-top: 55px;
+    }
+
+    .form {
+      @include box (482px, 40px);
+      display: flex;
+      flex-direction: row;
+      margin-top: 22px;
+
+      .form_enter {
+        @include box (280px, 31px);
+        border: 1px solid #D4D4D4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        padding-left: 14px;
+        padding-top: 6px;
+      }
+
+      .form-btn {
+        @include box (172px, 40px);
+        background-color: $red-button;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 11px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        color: $white-text;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer {
+  @include box (1440px, 260px);
+  border-top: 2px solid $red-button;
+  display: flex;
+
+  .footer__dreamshare {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: $red-button;
+    margin-left: 250px;
+    margin-top: 39px;
+  }
+
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 122px;
+    margin-top: 40px;
+
+    .footer_menu_company {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 14px;
+      color: $black-text-heading;
+    }
+
+    .footer_menu_links {
+      text-decoration: none;
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 14px;
+      color: $grey-menu;
+      margin-top: 13px;
+    }
+  }
+
+  .footer_partners {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: $black-text-heading;
+    margin-left: 125px;
+    margin-top: 40px;
+  }
+
+  .footer_designed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 288px;
+    margin-top: 41px;
+
+    .footer_designed_text {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 10px;
+      color: #CCCCCC;
+      letter-spacing: 1px;
+      margin-left: 31px;
+    }
+
+    .footer_designed_image {
+      @include box (110px, 24px);
+      background-image: url(images/footer.png);
+      margin-top: 6px;
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+
+  html,
+  body {
+    width: 768px;
+  }
+
+  .header {
+    width: 768px;
+    background-image: url(images/header-tablet.png);
+
+    .header_logo .header_logo__name {
+      margin-left: 48px;
+    }
+
+    .header_logo .header_login {
+      margin-right: 23px;
+    }
+  }
+
+  main {
+    @include box (768px, 2735px);
+
+    .dreamshare {
+      width: 768px;
+
+      .dreamshare__heading {
+        font-size: 22px;
+        margin-top: 96px;
+      }
+
+      .dreamshare_container {
+        width: 768px;
+        justify-content: space-around;
+
+        .dreamshare_container__dream1 {
+          @include box (236px, 400px);
+          background-image: url(images/dream-step-tablet-1.png);
+        }
+
+        .dreamshare_container__dream2 {
+          @include box (236px, 400px);
+          background-image: url(images/dream-step-tablet-2.png);
+        }
+
+        .dreamshare_container__dream3 {
+          @include box (236px, 400px);
+          background-image: url(images/dream-step-tablet-3.png);
+        }
+
+        .subHeading {
+          margin-bottom: 16px;
+          margin-left: 20px;
+          width: 186px;
+        }
+
+        .heading3,
+        .heading1 {
+          margin-bottom: 28px;
+          margin-left: 20px;
+          line-height: 14px;
+        }
+
+        .step3,
+        .step1 {
+          margin-bottom: 46px;
+          margin-left: 21px;
+        }
+
+        .subHeading2 {
+          margin-bottom: 16px;
+          margin-left: 20px;
+          width: 200px;
+        }
+
+        .heading2 {
+          margin-bottom: 22px;
+          margin-left: 20px;
+          line-height: 14px;
+          width: 150px;
+        }
+
+        .step2 {
+          margin-bottom: 18px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .partners {
+      @include box (768px, 710px);
+
+      .partners__heading {
+        font-size: 22px;
+        margin-top: 96px;
+      }
+
+      .partners_container {
+        @include box (475px, 470px);
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-top: 39px;
+
+        .partner1,
+        .partner2,
+        .partner3,
+        .partner4 {
+          @include box (221px, 214px);
+
+          .partner_name {
+            margin-top: 16px;
+          }
+
+          .partner_description {
+            margin-top: 22px;
+            width: 250px;
+          }
+        }
+      }
+
+      .partners-btn {
+        margin-top: 32px;
+      }
+    }
+
+    .activities {
+      width: 768px;
+      @include box (768px, 1116px);
+
+      .activities__heading {
+        font-size: 22px;
+        margin-top: 87px;
+      }
+
+      .activities_container {
+        @include box (748px, 1010px);
+
+        .activities__1 {
+          @include box (236px, 310px);
+          background-image: url(images/activity-tablet1.png);
+
+          .text1 {
+            width: 127px;
+            margin-top: -31px;
+            text-align: center;
+          }
+        }
+
+        .activities__2 {
+          @include box (236px, 310px);
+          background-image: url(images/activity-tablet2.png);
+
+          .text2 {
+            width: 160px;
+            margin-top: -5px;
+            text-align: center;
+          }
+        }
+
+        .activities__3 {
+          @include box (236px, 310px);
+          background-image: url(images/activity-tablet3.png);
+
+          .text3 {
+            width: 190px;
+            margin-top: 5px;
+            text-align: center;
+          }
+        }
+
+        .activities__4 {
+          @include box (236px, 310px);
+          background-image: url(images/activity-tablet4.png);
+        }
+
+        .activities__5 {
+          @include box (492px, 310px);
+          background-image: url(images/activity-tablet5.png);
+        }
+
+        .activities__6 {
+          @include box (492px, 310px);
+          background-image: url(images/activity-tablet6.png);
+        }
+
+        .activities__7 {
+          @include box (236px, 310px);
+          background-image: url(images/activity-tablet7.png);
+        }
+      }
+    }
+
+    .search {
+      width: 768px;
+
+      .search__heading {
+        font-size: 22px;
+        margin-top: 96px;
+      }
+    }
+  }
+
+  .footer {
+    width: 768px;
+
+    .footer__dreamshare {
+      margin-left: 39px;
+    }
+
+    .footer_menu {
+      margin-left: 108px;
+
+      .footer_menu_links {
+        margin-top: 11px;
+        width: 115px;
+      }
+    }
+
+    .footer_partners {
+      margin-left: 55px;
+    }
+
+    .footer_designed {
+      margin-left: 119px;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 320px) {
+
+  html,
+  body {
+    width: 320px;
+  }
+
+  .header {
+    @include box (320px, 540px);
+    background-image: url(./images/header-mobile.png);
+    background-size: cover;
+
+    .header_logo {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+
+      .header_logo__name {
+        margin-left: 96px;
+        margin-top: 73px;
+      }
+
+      .header_login {
+        margin-top: 32px;
+        margin-right: 0px;
+        margin-left: 84px;
+      }
+    }
+
+    .header__heading {
+      @include box (320px, 75px);
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: 28px;
+    }
+
+    .header__subheading {
+      width: 280px;
+      font-size: 18px;
+      line-height: 24.5px;
+      margin-left: 30px;
+      margin-top: 5px;
+    }
+
+    .header__button {
+      margin-top: 16px;
+    }
+  }
+
+  main {
+    @include box (320px, 3172px);
+
+    .dreamshare {
+      @include box (320px, 820px);
+
+      .dreamshare__heading {
+        font-size: 22px;
+        margin-top: 36px;
+      }
+
+      .dreamshare_container {
+        @include box (320px, 740px);
+        flex-direction: column;
+        align-items: center;
+        margin-top: 18px;
+
+        .dreamshare_container__dream1 {
+          @include box (300px, 240px);
+          background-image: url(./images/dream-step-1.png);
+        }
+
+        .dreamshare_container__dream2 {
+          @include box (300px, 240px);
+          background-image: url(./images/dream-step-2.png);
+        }
+
+        .dreamshare_container__dream3 {
+          @include box (300px, 240px);
+          background-image: url(./images/dream-step-3.png);
+        }
+
+        .step1,
+        .step3 {
+          margin-bottom: 46px;
+          margin-left: 20px;
+        }
+
+        .step2 {
+          margin-bottom: 24px;
+          margin-left: 20px;
+        }
+
+        .heading2 {
+          margin-bottom: 19px;
+          margin-left: 20px;
+        }
+
+        .subHeading2 {
+          margin-bottom: 15px;
+          margin-left: 20px;
+        }
+
+        .heading1,
+        .heading3 {
+          margin-bottom: 24px;
+          margin-left: 20px;
+          line-height: 14px;
+        }
+
+        .subHeading {
+          margin-bottom: 16px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .partners {
+      @include box (320px, 1062px);
+      text-align: center;
+
+      .partners__heading {
+        font-size: 22px;
+        margin-top: 33px;
+        line-height: 26px;
+      }
+
+      .partners_container {
+        @include box (320px, 910px);
+        flex-direction: column;
+        margin-top: 15px;
+
+        .partner1 {
+          order: 1;
+        }
+
+        .partner2 {
+          order: 3;
+          margin-top: 12px;
+        }
+
+        .partner3 {
+          order: 2;
+          margin-top: -7px;
+        }
+
+        .partner4 {
+          order: 4;
+          margin-top: -10px;
+        }
+
+
+        .partner1,
+        .partner2,
+        .partner3,
+        .partner4 {
+          .partner_description {
+            width: 240px;
+          }
+        }
+      }
+
+      .partners-btn {
+        margin-top: 14px;
+      }
+    }
+
+    .activities {
+      @include box (320px, 1024px);
+
+      .activities__heading {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 38px;
+        text-align: center;
+        width: 200px
+      }
+
+      .activities_container {
+        @include box (320px, 1010px);
+        justify-content: center;
+        margin-top: 34px;
+
+        .activities__1 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone1.png);
+
+          .text1 {
+            width: 125px;
+            line-height: 26px;
+            margin-top: -27px;
+            text-align: center;
+          }
+        }
+
+        .activities__2 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone2.png);
+
+          .text2 {
+            width: 156px;
+            text-align: center;
+            margin-top: -2px;
+            line-height: 26px;
+          }
+        }
+
+        .activities__3 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone3.png);
+        }
+
+        .activities__4 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone4.png);
+        }
+
+        .activities__5 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone5.png);
+        }
+
+        .activities__6 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone6.png);
+        }
+
+        .activities__7 {
+          @include box (300px, 120px);
+          background-image: url(images/activity-phone7.png);
+        }
+      }
+    }
+
+    .search {
+      @include box (320px, 265px);
+
+      .search__heading {
+        font-size: 22px;
+        text-align: center;
+        line-height: 26px;
+        margin-top: 35px;
+        width: 220px;
+      }
+
+      .search__subHeading {
+        margin-top: 18px;
+      }
+
+      .form {
+        @include box (320px, 116px);
+        flex-direction: column;
+        margin-top: 14px;
+        align-items: center;
+
+        .form_enter {
+          @include box (262px, 31px);
+        }
+
+        .form-btn {
+         margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    @include box (320px, 226px);
+    flex-direction: column;
+    align-items: center;
+  
+    .footer__dreamshare {
+      margin-left: 0;
+      margin-top: 22px;
+    }
+  
+    .footer_menu {
+      @include box (185px, 72px);
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 0px;
+      margin-top: 17px;
+      justify-content: space-evenly;
+  
+      .footer_menu_company {
+        position: absolute;
+        left: 125px;
+      }
+  
+      .footer_menu_links {
+        margin-top: 22px;
+        margin-right: 3px;
+      }
+    }
+  
+    .footer_partners {
+      margin-left: 0px;
+      margin-top: 4px;
+    }
+  
+    .footer_designed {
+      margin-left: 6px;
+      margin-top: 18px;
+    }
+  }
+}
